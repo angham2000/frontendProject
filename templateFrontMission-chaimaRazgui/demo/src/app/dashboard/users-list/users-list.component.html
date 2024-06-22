@@ -1,0 +1,23 @@
+<nz-table #basicTable [nzData]="users" >
+    <thead>
+      <tr>
+        <th>Email</th>
+        <th>Username</th>
+        <th>Role</th>
+        <th>Autorisé</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{ user.email }}</td>
+        <td>{{ user.username }}</td>
+        <td>{{ user.role }}</td>
+        <td>{{ user.enabled }}</td>
+        <td>
+          <a></a>
+          <a>Delete</a>
+        </td>
+      </tr>
+    </tbody>
+  </nz-table>
